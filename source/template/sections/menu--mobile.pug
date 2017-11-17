@@ -1,0 +1,26 @@
+#menu__mobile.menu__mobile
+	ul.menu__block
+		-var items = ['Сведения о медицинской организации', 'Информация для пациентов', 'Информация для специалистов', 'Расписание врачей', 'Контактная информация']
+		-var blocs = ['#', '#', '#', '#', '#']
+		each item, index in items
+			if index === 0
+				li.menu__mobile__item
+					a.menu__mobile__link.menu__mobile__link--active(href=blocs[index])= item
+					ul.menu__mobile__drown
+						each item, index in items
+							li.menu__mobile__drown__item
+								if index === 0
+									a.menu__mobile__drown__link(href=blocs[index])= item
+								else
+									a.menu__mobile__drown__link(href=blocs[index])= item
+			else if index === 1
+				li.menu__mobile__item
+					a.menu__mobile__link(href=blocs[index])= item
+					ul.menu__mobile__drown
+						each item, index in items
+							li.menu__mobile__drown__item
+								a.menu__mobile__drown__link(href=blocs[index])= item
+			else
+				li.menu__mobile__item
+					a.menu__mobile__link(href=blocs[index])= item
+

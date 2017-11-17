@@ -1,0 +1,202 @@
+.footer{
+	background-color: #2b3338;
+	padding: 50px 15px;
+   	display: flex;
+
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+
+		@media (max-width: 680px){
+		    flex-direction: column;
+		    width: 300px;
+		    margin: 0px auto;
+		}
+	}
+
+	&__wrapper{
+		display: flex;
+	}
+
+
+	&__left{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-grow: 1;
+	}
+
+	&__contact{
+		
+
+	}
+
+	&__right{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex-basis: 30%;
+    	margin-left: 25px;
+		flex-shrink: 0; 
+
+		@media (max-width: 1120px){
+    		flex-basis: 100%;
+    		margin-left: 0px;
+   		}
+	}
+
+
+	&__tel{
+		
+		@media (max-width: 1120px){
+    		display: flex;
+    		flex-wrap: wrap;
+    		justify-content: space-between;
+    		width: 100%;
+    		margin-bottom: 20px;
+   		}
+
+		@media (max-width: 680px){
+		    flex-direction: column;
+		    width: 300px;
+		    margin: 0px auto;
+		}
+
+
+		&__link{
+			font-family: $ff-main;
+			font-size: 22px;
+			font-weight: 500;
+			text-decoration: none;
+			color: #fff;
+			cursor: default;
+		}
+
+		&__desc{
+			font-family: $ff-main;
+			font-size: 12px;
+			font-weight: bold;
+			color: #93a6b3;
+			text-transform: uppercase;
+			margin-top: 5px;
+			margin-bottom: 15px;
+		}
+
+	}
+
+	&__adress{
+		font-family: $ff-main;
+		font-size: 16px;
+		color: #ffffff;
+		background:url(../images/map.svg) left center no-repeat;
+		background-size: 20px;
+		padding: 2px 0px 2px 30px;
+		margin-bottom: 35px;
+	}
+
+	&__link{
+	 	 color: #a3a3a3;
+	 	 font-size: 16px;
+	 	 font-family: $ff-main;
+	 	 text-decoration: none;
+	 	 transition: 0.3s;
+
+	 	 &:hover{
+	 	 	color: #fff;
+	 	 }
+	}
+
+	&__prava{
+		display: flex;
+    	align-items: center;
+    	color: #93a6b3;
+    	font-size: 14px;
+    	font-family: $ff-main;
+    	padding-right: 40px;
+
+    	@media(max-width:850px){
+			display: none;
+		}
+
+	}
+
+	&__dev{
+		
+		&__link{
+			text-decoration: none;
+			font-family: $ff-main;
+			font-size: 14px;
+			color: #93a6b3;
+			display: flex;
+		    width: 200px;
+		    align-items: center;
+		    font-weight: bold;
+		    margin-right: 20px;
+
+			img{
+				margin-right: 15px;
+			}
+		}
+	
+	}
+	
+
+	&__social{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+
+		@media(max-width:850px){
+			display: none;
+		}
+
+		@media(max-width:680px){
+			display: flex;
+		}
+
+
+		&__item{
+			margin-right: 20px;
+			margin-bottom: 15px;
+		}
+
+		&__svg{
+			fill:#93a6b3;
+			width: 30px;
+			transition: 0.3s;
+
+			&:hover, &:active{
+				fill:#fff;
+			}
+		}
+
+	}
+
+	&__politika{
+	 	color: #93a6b3;
+	 	font-size: 14px;
+	 	font-family: $ff-main;
+	 	text-decoration: none;
+	 	transition: 0.3s;
+	 	display: flex;
+    	align-items: center;
+
+	 	 &:hover{
+	 	 	color: #fff;
+	 	 }
+
+	@media(max-width:767px){
+		padding: 20px 0px;
+	}
+	 
+	}
+
+	
+
+
+
+
+}
+

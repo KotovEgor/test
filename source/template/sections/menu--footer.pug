@@ -1,0 +1,14 @@
+ul.menu.menu--footer
+	-var items = ['Медицинская организация', 'Больница', 'Документы', 'Расписание врачей', 'Новости', ' Пациентам', 'Контакты']
+	-var blocs = ['#', '#', '#', '#', '#', '#', '#']
+	each item, index in items
+		if index === 0
+			li.menu__item.menu__item--footer
+				a.menu__link.menu__link--footer.menu__link--footer--active(href=blocs[index])= item
+		else
+			li.menu__item.menu__item--footer
+				a.menu__link.menu__link--footer(href=blocs[index])= item
+
+
+
+	

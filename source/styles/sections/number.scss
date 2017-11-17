@@ -1,0 +1,51 @@
+.number{
+	padding: 70px 10px 60px;
+	background: url(../images/number.png) center/cover no-repeat;
+
+	&__wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@media(max-width: 1200px){
+			justify-content: center;
+		}
+	}
+
+	&__item{
+		flex-basis: 20%;
+		padding: 0px 20px;
+		text-align: center;
+		font-family: $ff-main;
+		@media(max-width: 1200px){
+			margin-bottom: 30px;
+		}
+		@media(max-width: 600px){
+			flex-basis: 100%;
+		}
+	}
+
+	&__title{
+		font-family: "Bebas Neue";
+		font-size: 100px;
+		color: #6eeff0;
+		padding-bottom: 15px
+	}
+
+	&__desc{
+		font-family: $ff-main;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.4;
+		color: #ffffff;
+	}
+}
+
+.number .container{
+ 		@media(max-width: 1200px){
+			width: 980px;
+		}
+		@media (max-width: 1030px){
+    		width: 100%;
+    	}
+
+}

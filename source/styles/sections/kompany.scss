@@ -1,0 +1,60 @@
+.company{
+	display: flex;
+	padding: 50px 10px 80px;
+
+	h3{
+		font-size: 30px;
+		font-family: $ff-main;
+		margin: 20px 0px;
+	}
+
+	&__title{
+		text-align: center;
+		margin-bottom: 50px;
+		font-size: 30px;
+		font-family: $ff-main;
+	}
+
+	&__wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 0px 70px;
+
+		&--detail{
+			padding: 0px;
+			flex-basis: 65%;
+		}
+	}
+
+	&__detail{
+		display: flex;
+	}
+
+
+	&__img{
+		flex-grow: 1;
+    	flex-shrink: 1;
+    	flex-basis: 170px;
+    	margin-right: 20px;
+
+		&__item{
+			width: 100%;
+
+
+			&--float{
+				width: 49%;
+				margin-right: 1%;
+			}
+		}
+	}
+
+	&__desc{
+		flex-grow: 1;
+    	flex-shrink: 1;
+    	flex-basis: 320px;
+    	line-height: 24px;
+	}
+
+
+}

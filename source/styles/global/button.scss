@@ -1,0 +1,35 @@
+.button{
+	border: none;
+	padding: 10px 30px;
+	background-color: #0fccce;
+	text-decoration: none;
+	font-family: $ff-main;
+	font-weight: bold;
+	font-size: 16px;
+	transition: 0.3s;
+	color: #fff;
+	margin-top: 20px;
+	display: inline-block;
+	cursor: pointer;
+	
+
+
+	&--circle{
+		border-radius: 30px;
+	}
+
+	&--shadow{
+		box-shadow: 2.8px 4.8px 36.5px 5.5px rgba(35, 75, 75, 0.2);
+	}
+
+
+	&--top{
+		margin-top: 50px;
+	}
+
+
+	&:hover, &:active{
+		color: #fff;
+		background-color: $base-color;
+	}
+}

@@ -1,0 +1,42 @@
+.site{
+	padding: 35px 10px;
+	display: flex;
+	border-top: 2px solid #e1e1e1;
+
+	&__wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__link{
+		text-decoration: none;
+	}
+
+	&__item{
+		padding: 0px 10px;
+		margin-top: 20px;
+    	margin-bottom: 20px;
+    	flex-basis: 20%;
+
+    	@media (max-width: 1130px){
+    		margin-bottom: 40px;
+   		}
+
+   		@media(max-width: 680px){
+			flex-basis: 100%;
+    		text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item img{
+		@media(max-width: 680px){
+			width: 50%;
+		}
+		@media(max-width: 400px){
+			width: 100%;
+		}
+
+	}
+}

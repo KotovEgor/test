@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport" content="width=device-width initial-scale=1")
+		link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico")
+		link(rel="stylesheet" href="css/main.min.css")
+		link(rel="stylesheet" href="css/hamburgers.min.css")
+		link(rel="stylesheet" href="fonts/roboto/roboto.css")
+		link(rel="stylesheet" href="css/jquery.fancybox.min.css")
+		link(rel="stylesheet" href="fonts/bebas/bebas.css")
+		link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic", rel="stylesheet")
+		link(rel="stylesheet", href="css/eye-general.css")
+		script(src="js/eye-preload.js")
+		title Заголовок
+	body
+		include sections/mixins.pug
+		include sections/menu--mobile
+		#page
+			include sections/header.pug
+			include sections/slider.pug
+			include sections/banners.pug
+			include sections/content.pug
+			include sections/tab.pug
+			include sections/number.pug
+			include sections/news.pug
+			include sections/site.pug
+			include sections/footer.pug
+		script(src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU", type="text/javascript")
+		script(src="js/main.min.js")
+		script(src="js/eye-other.js")
+		script(src="js/eye-main.js")
+
+

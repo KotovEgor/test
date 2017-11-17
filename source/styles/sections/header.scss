@@ -1,0 +1,189 @@
+.header {
+	width: 100%;
+	padding-top: 20px;
+
+
+	&__top{
+		display: flex;
+		padding: 0px 10px 20px;
+
+		&__wrapper{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+
+	&__bottom{
+		display: flex;
+		padding: 0px 10px;
+		position:relative;
+		border-bottom: 1px solid #d6d6d6;
+    	border-top: 1px solid #d6d6d6;
+
+		&__wrapper{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+
+
+
+	&__logo{
+
+
+		&__img{
+			padding-right: 10px;
+			height: 49px;
+		}
+
+		&__link{
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+		}
+
+
+		&__title{
+			font-weight: bold;
+			font-size: 24px;
+			font-family: $ff-main;
+			color: $color-title;
+			text-transform: uppercase;
+			line-height: 1.4;
+		}
+
+		&__desc{
+			text-decoration: none;
+			font-size: 12px;
+			font-family: $ff-main;
+			color: $base-color;
+			line-height: 1.4;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+
+	&__tel{
+		@media(max-width: 680px){
+				display: none;
+		}
+
+		&__link{
+			font-size: 24px;
+			font-weight: bold;
+			font-family: $ff-main;
+			text-decoration: none;
+			color:$color-title;
+			cursor: default;
+			
+		}
+
+		&__desc{
+			margin-top: 7px;
+			font-family: $ff-main;
+			font-size: 12px;
+			color: $base-color;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		&--mobile{
+			display: none;
+			 @media(max-width: 680px){
+				display: block;
+			}
+		}
+
+		&--mobile img{
+			width: 40px;
+		}
+	}
+
+	&__eye{
+		background: url(../images/eye.svg) center left no-repeat;
+		background-size: 25px;
+
+		&__item{
+			text-decoration: none;
+			color: #167dbd;
+			font-size: 14px;
+			font-family: $ff-main;		
+			font-weight: bold;
+			border-bottom: 1px dashed;
+			margin-left: 35px;
+			transition: 0.3s;
+
+			&:hover, &:active{
+				border-bottom: 1px dashed transparent;
+			}
+		}
+
+		
+	}
+
+	&__time{
+		@media (max-width: 900px){
+    		display: none;
+   		}
+
+		&__item{
+			margin-top: 13px;
+			font-size: 14px;
+			background: url(../images/clock.svg) no-repeat;
+			background-position:0px 0px;
+			background-size: 13px;
+			padding-left: 20px;
+
+
+			&--bold{
+				font-weight: bold;
+			}
+		}
+	}
+
+	&__search{
+		
+
+		&__link{
+			cursor: pointer;
+		}
+
+		&__img{
+			width: 25px;
+			@media (max-width: 1200px){
+    			width: 18px;
+    		}
+		}
+
+		&__hidden{
+			display: none;
+			position: absolute;
+		    left: 0;
+		    top: 100%;
+		    width: 100%;
+		    z-index: 1000;
+		    background-color: #fff;
+		    padding: 20px 10px 30px;
+		    text-align: center;
+		    box-shadow: inset 0px 200px 150px -240px rgba(0,0,0,0.4);
+		}
+		
+		&__input{
+			height: 35px;
+			margin-right: 20px; 
+			width: 50%;
+			outline: none;
+			padding: 0px 10px;
+		}
+
+	
+
+	}
+
+}
+
+

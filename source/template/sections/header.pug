@@ -1,0 +1,46 @@
+header.header
+		.header__top
+			.container
+				.header__top__wrapper
+					.header__logo
+						a.header__logo__link(href="/")
+							img.header__logo__img(src="/images/logo.png", alt="Детская областная клиническая больница")
+							.header__logo__desc
+								span.header__logo__title докб
+								br
+								| детская областная
+								br
+								| клиническая больница
+					.header__tel
+						a.header__tel__link(href="tel:+74822349093") (4822) 34-90-93
+						.header__tel__desc регистратура
+					.header__tel
+						a.header__tel__link(href="tel:+74822344154") (4822) 34-41-54
+						.header__tel__desc Приёмное отделение
+					.header__time
+						.header__eye
+							.header__eye__item.ugost-open(onclick="ugost.show()", role="button") Версия для слабовидящих
+						.header__time__item 
+							span.header__time__item--bold График работы: 
+							| с 8.00 до 19.00
+					.header__tel.header__tel--mobile
+						a.header__tel__link(href="tel:+74822349093")
+							img(src="/images/phone-m.svg")
+				
+					
+		.header__bottom
+			.container
+				.header__bottom__wrapper
+					.header__menu
+						include menu
+						button#hamburger.hamburger.hamburger--collapse(type="button")
+							span.hamburger-box
+								span.hamburger-inner
+					.header__search
+						form.header__search__form
+							a.header__search__link
+								img.header__search__img(src="/images/search.svg")
+							.header__search__hidden
+								.container
+									input.header__search__input(type="text", placeholder="введите текст", name="s", value="")
+									input.button.header__search__button(type="submit", name="s", value="поиск")

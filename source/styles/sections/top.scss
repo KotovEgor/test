@@ -1,0 +1,52 @@
+.top{
+	display: flex;
+	background-color: #e8e8e8;
+	padding: 10px 15px;
+
+
+	&__wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__phone{
+		color:#000;
+		text-decoration: none;
+		padding-left: 30px;
+		margin-right: 40px;
+		background: url(../images/phone.svg) left center no-repeat;
+		background-size: 18px;
+		font-size: 14px;
+	}
+
+	&__email{
+		color:#000;
+		text-decoration: none;
+		padding-left: 30px;
+		margin-right: 40px;
+		background: url(../images/email.svg) left center no-repeat;
+		background-size: 18px;
+		font-size: 14px;
+	}
+
+	&__adress{
+		color:#000;
+		text-decoration: none;
+		padding-left: 30px;
+		margin-right: 40px;
+		background: url(../images/map.svg) left center no-repeat;
+		background-size: 18px;
+		font-size: 14px;
+	}
+
+	&__social{		
+
+		&__img{
+			width: 25px;
+			margin-right: 5px;
+		}
+	}
+
+}

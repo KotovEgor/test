@@ -1,0 +1,80 @@
+.banners{
+	display: flex;
+	margin-bottom: 60px;
+	padding: 0px 15px;
+	@media (max-width: 950px){
+    	display: none;
+   	}
+
+	&__wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__item{
+		background-color: #fff;
+		width: 30%;
+		display: flex;
+		text-align: center;
+  		border: solid 1px #ebebeb;
+  		position: relative;
+  		z-index: 100;
+
+  		&:before{
+  			content: '';
+  			width: 70px;
+  			height: 70px;
+  			padding: 55px;
+  		}
+		
+		&--reviews{
+
+			&:before{
+				background:url(../images/otzv.png) center no-repeat;
+			}
+
+		}
+
+		&--services{
+
+			&:before{
+				background:url(../images/services.png) center no-repeat;
+			}
+
+		}
+
+
+		&--doctor{
+
+			&:before{
+				background:url(../images/doc.png) center no-repeat;
+			}
+
+		}
+
+	}
+
+	&__link{
+		font-size: 24px;
+  		font-weight: 500;
+  		font-family: $ff-main;
+  		text-decoration: none;
+  		color: #313131;
+  		align-items: center;
+    	display: flex;
+    	justify-content: center;
+    	width: 100%;
+    	box-shadow: 0 0 19px 0 rgba(35, 75, 75, 0.13);
+    	padding: 15px;
+    	transition: 0.3s;
+    	
+
+    	&:hover, &:active{
+    		background: linear-gradient(to top, #0fccce, #0e82cc);
+    		-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+  			color: #0fccce;
+    	}
+	}
+}

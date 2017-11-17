@@ -1,0 +1,35 @@
+.offer{
+	padding: 50px 0px;
+	background: url(../images/preim.png) center/cover no-repeat;
+	display: flex;
+
+
+	&__wrapper{
+		width: 70%;
+		margin: 0px auto;
+		padding: 50px 80px;
+		background: rgba(#fff, 0.7);
+		text-align: center;
+		@media(max-width:900px){
+			width: 90%;
+			margin: 0px 5%; 
+		}
+		@media(max-width:767px){
+			padding: 30px;
+		}
+	}
+
+	&__title{
+		margin: 0px;
+		padding: 0px;
+		font-family: $ff-main;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1.6;
+		margin-bottom: 10px;
+		@media(max-width:767px){
+			font-size: 24px;
+			line-height: 1.2;
+		}
+	}
+}

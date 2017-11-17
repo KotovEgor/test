@@ -1,0 +1,36 @@
+@import "../../node_modules/normalize.scss/normalize";
+@import "../../node_modules/owl.carousel/src/scss/owl.carousel";
+@import "../../node_modules/owl.carousel/src/scss/owl.theme.default";
+@import "../../node_modules/owl.carousel/src/scss/animate.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate/fadeIn.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate/fadeInUp.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate/bounceIn.scss";
+@import "../../node_modules/animate.scss/vendor/assets/stylesheets/animate/slideInLeft.scss";
+
+
+@import "global/vars";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/global";
+@import "global/common";
+@import "global/button";
+@import "global/slider";
+@import "sections/top";
+@import "sections/menu";
+@import "sections/header";
+@import "sections/banners";
+@import "sections/banner";
+@import "sections/kompany";
+@import "sections/tab";
+@import "sections/number";
+@import "sections/site";
+@import "sections/news";
+@import "sections/docs";
+@import "sections/content";
+@import "sections/offer";
+@import "sections/services";
+@import "sections/product";
+@import "sections/map";
+@import "sections/footer";
+@import "sections/popup";

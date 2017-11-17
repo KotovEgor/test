@@ -1,0 +1,88 @@
+.plus{
+	padding: 65px 0px 85px;
+	text-align: center;
+	font-family: $ff-main;
+	display: flex;
+	@media(max-width:767px){
+		padding: 30px 20px 35px;
+	}
+
+	&__title__header{
+		padding-bottom: 10px;
+		font-size: 30px;
+		font-weight: bold;
+		margin: 0px;
+		text-transform: uppercase;
+		line-height: 1.6;
+	@media(max-width:767px){
+		font-size: 24px;
+		line-height: 1.2;
+	}
+	}
+
+
+	&__title__text{
+		font-size: 18px;
+		color: #000000;
+		@media(max-width:767px){
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
+
+	&__list{
+		display: flex;
+		justify-content: space-between;
+		padding-left: 0px;
+		flex-wrap: wrap;
+		margin: 0px;
+		padding-top: 50px;
+		@media(max-width:767px){
+			padding-top: 10px;
+		}
+	}
+
+	&__item{
+		flex-grow: 1;
+    	flex-shrink: 1;
+    	flex-basis: 320px;
+    	padding: 0px 30px 20px;
+    	@media(max-width:767px){
+			padding: 0px 0px 20px;
+		}
+	}		
+
+
+	&__title{
+		padding: 20px 0px;
+		font-size: 30px;
+		font-weight: bold;
+		margin: 0px;
+		text-transform: uppercase;
+		line-height: 1.6;
+		@media(max-width:767px){
+			font-size: 24px;
+			line-height: 1.2;
+		}
+	}
+
+	&__img{
+		min-height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	&__svg{
+		width:100px;
+		fill: $base-color;
+	}
+
+	&__desc{
+		font-size: 18px;
+	}
+
+
+
+}

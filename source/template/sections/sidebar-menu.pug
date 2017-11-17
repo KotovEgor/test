@@ -1,0 +1,10 @@
+ul.menu.menu--sidebar
+	-var items = ['Информация о компании', 'Мы производим', 'Вакансии', 'Информация']
+	-var blocs = ['#', '#', '#', '#']
+	each item, index in items
+		if index === 0
+			li.menu__item.menu__item--sidebar
+				a.menu__link.menu__link--sidebar.menu__link--active(href=blocs[index])= item
+		else
+			li.menu__item.menu__item--sidebar
+				a.menu__link.menu__link--sidebar(href=blocs[index])= item
